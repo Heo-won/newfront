@@ -7,6 +7,8 @@ import Review from "../components/Review";
 import data from "../data";
 import "../style/productScreen.css";
 import styled from "styled-components";
+import { useLogout } from "../hooks/useLogout";
+import { useAuthContext } from "../hooks/useAuthContext";
 
 const Blank = styled.div`
     width: 100%;
@@ -30,9 +32,13 @@ export default function ProductScreen(props) {
 
     const [avg, setAvg] = useState(0);
 
+    const { user } = useAuthContext();
+
+    console.log(user);
+
     useEffect(() => {
         async function fetchData() {
-            const res = await fetch("http://localhost:5000/api/product/getAll");
+            const res = await fetch("http://localhost:4500/api/product/getAll");
             if (res.status === 200) {
                 const data = await res.json();
                 const product = data.find((X) => X._id === params.id);
@@ -66,7 +72,7 @@ export default function ProductScreen(props) {
             total += newRating;
             let avg = total / (reviews.length + 1);
 
-            const res = await fetch("http://localhost:5000/api/product/write", {
+            const res = await fetch("http://localhost:4500/api/product/write", {
                 method: "post",
                 headers: {
                     "Content-Type": "application/json",

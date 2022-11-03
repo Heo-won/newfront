@@ -17,7 +17,7 @@ export default function HomeScreen() {
 
     useEffect(() => {
         async function fetchData() {
-            const res = await fetch("http://localhost:5000/api/product/getAll");
+            const res = await fetch("http://localhost:4500/api/product/getAll");
             if (res.status === 200) {
                 const data = await res.json();
                 console.log(data);

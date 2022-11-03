@@ -12,7 +12,7 @@ export default function Product(props) {
             <li>
                 <div key={product._id} className="product">
                     <Link to={"product/" + product._id}>
-                        <img className="product-image" src={product.thumbImage} alt="product" />
+                        <img className="product-image" src={product.image} alt="product" />
                     </Link>
                     <div className="product-name">
                         <Link to={"product/" + product._id}>{product.brand}</Link>
