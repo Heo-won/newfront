@@ -1,0 +1,15 @@
+/* Rating */
+.review-rating {
+  margin: 0.5em 0;
+}
+
+.review-rating span {
+  color: #f0c040;
+  margin: 0.2rem;
+  font-size: 2em;
+}
+
+.review-rating span:first-child {
+  color: grey;
+  margin: 0.5vw;
+}

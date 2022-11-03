@@ -1,0 +1,21 @@
+#board-list {
+    align-items: center;
+}
+
+table {
+    width: 90%;
+}
+
+tr {
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #cd5c5c;
+}

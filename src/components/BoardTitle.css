@@ -1,0 +1,39 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-underline-position: under;
+}
+a:focus {
+    text-decoration: none;
+}
+
+.link {
+    cursor: pointer;
+}
+
+tr {
+    text-align: center;
+    /* width: 100vw; */
+}
+
+td {
+    text-align: center;
+}
+
+td.left {
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    width: 30em;
+}
+
+.writtentime {
+    width: 11em;
+}

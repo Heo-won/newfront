@@ -1,0 +1,190 @@
+.inner {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.inner .back {
+  display: block;
+  font-size: 2em;
+  margin: 30px 0 20px 0;
+  color: #312b2b;
+}
+
+.inner .product-name {
+  font-size: 3em;
+}
+
+.SubSpan {
+  font-size: 1.5em;
+  position: relative;
+  bottom: 1em;
+  font-weight: bold;
+  color: #1566f8;
+}
+
+.inner .product-img {
+  width: 450px;
+}
+
+.inner .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-top: 10vh; */
+}
+
+.inner .row.center {
+  justify-content: center;
+}
+
+.inner .row.top {
+  align-items: flex-start;
+}
+
+.inner .row .col-1 {
+  flex: 1 1 25rem;
+}
+
+.inner .row .col-1 ul {
+  border: 1px solid red;
+}
+
+.inner .row .col-2 {
+  flex: 2 1 50rem;
+  align-items: flex-start;
+}
+
+.inner .row .col-2 ul > li > h1 {
+  font-size: 3em;
+  margin-top: 0px;
+}
+
+.inner .row .col-2 ul li {
+  margin: 1em 0;
+}
+
+/* 버튼 공통 */
+.inner .row .col-2 ul li .button {
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 30px;
+  width: 100px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inner .row .col-2 ul li .button.review-write-show {
+  background-color: #f0c040;
+  color: #312b2b;
+}
+
+.inner .row .col-2 ul li .button.review-write {
+  background-color: #312b2b;
+  font-weight: normal;
+  font-size: 1.2em;
+  color: white;
+}
+
+.inner .row .col-2 ul li .button.review-write-close {
+  background-color: #312b2b;
+  font-weight: normal;
+  font-size: 1.2em;
+  color: white;
+  margin-left: 1em;
+}
+
+.inner .row .col-2 ul li .button.review-write-close i {
+  vertical-align: middle;
+}
+
+/* 별점 부분 */
+.star {
+  position: absolute;
+  color: #ccc;
+  font-size: 3em;
+  transform: translateY(-10px);
+}
+
+.star input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.star span {
+  width: 0;
+  position: absolute;
+  left: 0;
+  color: #f0c040;
+  overflow: hidden;
+  pointer-events: none;
+  font-size: 1em;
+}
+
+.inner .row .col-2 ul .review-write-area {
+  font-size: 1.3em;
+  background-color: #eee;
+  padding: 10px 25px;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.inner .row .col-2 ul .review-write-area div {
+  margin: 1em 0 0.5em 0;
+}
+
+.inner .row .col-2 ul .review-write-area div:nth-child(2) {
+  margin: 1.5em 0 1.5em 0;
+}
+
+.inner .row .col-2 ul .review-write-area div .input-part {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner .row .col-2 ul .review-write-area .review-input {
+  border-radius: 5px;
+  font-size: 1.3em;
+  padding: 0.5em;
+  width: 95%;
+}
+
+.inner .row .col-2 ul .review-show-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner .row .col-2 .font {
+  font-size: 2em;
+}
+
+.inner .card .row {
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5em;
+  vertical-align: bottom;
+}
+
+.inner .card .row .add-span {
+  height: 30px;
+  line-height: 35px;
+}
+
+.inner .card .row .my-button {
+  background-color: #312b2b;
+  color: white;
+  height: 30px;
+  width: 150px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}

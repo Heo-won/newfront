@@ -1,0 +1,59 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "가을 신제품 출시기념 이벤트",
+            "content": "가을 신제품 출시기념 이벤트를 진행합니다. 많은 참여 부탁드립니다. ",
+            "brand": "megacoffee",
+            "author": "메가커피",
+            "date": "2022-11-02",
+            "views": "0",
+            "thumbImg": "/images/Event1.jpg",
+            "detailImg": "/images/Detail1.jpg"
+        },
+        {
+            "id": 2,
+            "title": "한끼든든 피자 출시기념 이벤트",
+            "content": "한끼든든 피자 출시기념 다양한 이벤트를 진행합니다. 많은 참여 부탁드립니다. ",
+            "brand": "megacoffee",
+            "author": "메가커피",
+            "date": "2022-11-03",
+            "views": "0",
+            "thumbImg": "/images/Event2.jpg",
+            "detailImg": "/images/Detail2.jpg"
+        },
+        {
+            "id": 3,
+            "title": "메가오더, KB Pay 제휴 이벤트",
+            "content": "메가MGC커피 APP 에서 KB Pay 결제 제휴 이벤트를 확인하시고, 할인 받으세요~",
+            "brand": "megacoffee",
+            "author": "메가커피",
+            "date": "2022-11-02",
+            "views": "0",
+            "thumbImg": "/images/Event3.jpg",
+            "detailImg": "/images/Detail3.png"
+        },
+        {
+            "id": 4,
+            "title": "shining summer days '썸머 페스티벌'",
+            "content": "2022년 여름 두 번째 신제품 출시 기념 이벤트를 진행합니다! ",
+            "brand": "megacoffee",
+            "author": "메가커피",
+            "date": "2022-11-02",
+            "views": "0",
+            "thumbImg": "/images/Event4.jpg",
+            "detailImg": "/images/Detail4.jpg"
+        },
+        {
+            "id": 5,
+            "title": "머그멍 즐기고 마시멍 느끼는 '썸머제주'",
+            "content": "2022년 여름 신제품 출시 기념 이벤트를 진행합니다!",
+            "brand": "megacoffee",
+            "author": "메가커피",
+            "date": "2022-11-02",
+            "views": "0",
+            "thumbImg": "/images/Event5.jpg",
+            "detailImg": "/images/Detail5.jpg"
+        }
+    ]
+}
