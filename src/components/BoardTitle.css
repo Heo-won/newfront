@@ -1,16 +1,12 @@
+/* * {
+    overflow-x: hidden;
+} */
+
 a {
     text-decoration: none;
     color: black;
 }
 a:visited {
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-    text-decoration-color: black;
-    text-underline-position: under;
-}
-a:focus {
     text-decoration: none;
 }
 
@@ -20,11 +16,17 @@ a:focus {
 
 tr {
     text-align: center;
-    /* width: 100vw; */
+    line-height: 2.5em;
 }
 
 td {
     text-align: center;
+    line-height: 2em;
+    font-size: 0.8em;
+}
+
+.bodytr:hover {
+    background-color: rgba(126, 126, 126, 0.055);
 }
 
 td.left {
@@ -34,6 +36,30 @@ td.left {
     width: 30em;
 }
 
+.seq {
+    width: 3em;
+}
+
+.like {
+    width: 3em;
+}
+
+.view {
+    width: 3em;
+}
+
 .writtentime {
     width: 11em;
+}
+
+@media screen and (max-width: 1270px) {
+    .like,
+    .view,
+    .seq {
+        display: none;
+    }
+
+    Boardtable {
+        margin: 2em;
+    }
 }

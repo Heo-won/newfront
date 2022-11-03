@@ -15,13 +15,21 @@ import styles from "./topNavigationBar.module.css";
 import LOGO from "../images/drink.png";
 import styledC from "styled-components";
 
-const Button = styledC.button`
-    color:red;
-    background-color:white;
-    border-radius: 5px;
-    border:1px solid black;
-    padding:0.5em;
-    margin-left:1em;
+const MyDiv = styledC.div`
+  display: flex;
+  align-items: center;
+  gap:10px;
+`;
+
+const MySpan = styledC.div`
+line-height: 60px;
+vertical-align:center;
+
+`;
+
+const MyImg = styledC.img`
+  width: 50px;
+  margin-bottom:20px;
 `;
 
 export default function Header({ cart }) {
@@ -46,10 +54,13 @@ export default function Header({ cart }) {
     <div className="out">
       <header className="header">
         <div className="brand">
-          <button>
-            <image></image>&#9776;
-          </button>
-          <Link to="/">뭐마시지?</Link>
+          <button>&#9776;</button>
+          <Link to="/">
+            <MyDiv>
+              <MyImg className="logo" src={LOGO} alt="로고" />
+              <MySpan>뭐마시지?</MySpan>
+            </MyDiv>
+          </Link>
         </div>
         <div className="header-left-links">
           {/* html에서 a 태그가 react에선 link라 생각하면된다 */}
@@ -82,7 +93,15 @@ export default function Header({ cart }) {
           {user && (
             <div>
               <span>{user.email}</span>
-              <Button onClick={handleClick}>Log out</Button>
+              <button onClick={handleClick}>Log out</button>
+              <FontAwesomeIcon icon={faBell} size="2x" />
+              <a href="cart.html">
+                <IconButton aria-label="cart" sx={{ color: "#312b2b" }}>
+                  <StyledBadge badgeContent={5} color="secondary">
+                    <ShoppingCartIcon sx={{ fontSize: "1em" }} />
+                  </StyledBadge>
+                </IconButton>
+              </a>
             </div>
           )}
 

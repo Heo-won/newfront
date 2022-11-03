@@ -197,7 +197,8 @@ ul {
   grid-area: main;
 }
 .footer {
-  grid-area: footer;
+
+grid-area: footer;
   background-color: #efefef;
   height: 20vh;
   color: #572a31;
@@ -205,8 +206,9 @@ ul {
   justify-content: center;
   align-items: center;
   bottom: 0;
-  /* margin-top: 3vw; */
+  margin-top: 3vw;
   /* width: 100vw; */
+
 }
 .footer p {
   display: flex;
@@ -216,6 +218,7 @@ ul {
 a {
   text-decoration: none;
 }
+
 a:hover {
   color: #ff8000;
   transition: 0.1s ease;
@@ -385,5 +388,9 @@ input.error {
   .header {
     height: 7em;
     justify-content: space-between;
+  }
+
+  .header .logo {
+    display: none;
   }
 }

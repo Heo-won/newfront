@@ -12,6 +12,9 @@
 
 .filter p {
   cursor: pointer;
+  font-size: 2em;
+  color: #656565;
+  margin-top: 2em;
 }
 
 .flex_wrap {
@@ -21,7 +24,7 @@
   place-items: center;
   gap: 70px 0px;
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 1em;
 }
 
 @media (max-width: 1440px) {

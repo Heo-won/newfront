@@ -13,7 +13,7 @@ const Product = ({ convertPrice, cart, setCart }) => {
         <>
             <Blank />
             <Detail convertPrice={convertPrice} cart={cart} setCart={setCart} />
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 };
