@@ -13,3 +13,17 @@
   color: grey;
   margin: 0.5vw;
 }
+
+.review-rating span:nth-child(2) {
+  color: black;
+}
+
+.review-rating span:last-child {
+  color: #f0c040;
+  margin: 0.5vw;
+}
+
+.review-rating span.delete {
+  color: black;
+  cursor: pointer;
+}
