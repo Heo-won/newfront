@@ -8,6 +8,9 @@ import StoreBenner from "../StoreBenner";
 import Footer from "../Footer";
 import styled from "styled-components";
 
+// 여기서 꾸미거라
+import maincss from "./maincss.css";
+
 const Blank = styled.div`
   width: 100%;
   height: 10em;
@@ -130,6 +133,7 @@ export const Main = ({ products, setProducts, convertPrice }) => {
       <Blank />
       <StoreBenner />
 
+
       <div className={styles.category}>
         <h2>브랜드별로 보기</h2>
         <label>
@@ -232,7 +236,7 @@ export const Main = ({ products, setProducts, convertPrice }) => {
           );
         })}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
