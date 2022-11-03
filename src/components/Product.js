@@ -6,21 +6,21 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 export default function Product(props) {
-    const { product } = props;
-    return (
-        <>
-            <li>
-                <div key={product._id} className="product">
-                    <Link to={"product/" + product._id}>
-                        <img className="product-image" src={product.thumbImage} alt="product" />
-                    </Link>
-                    <div className="product-name">
-                        <Link to={"product/" + product._id}>{product.brand}</Link>
-                    </div>
-                    <div className="product-brand">{product.brand}</div>
-                    {/* <Rating rating={product.rating} numReviews={product.numReviews} /> */}
-                </div>
-            </li>
-        </>
-    );
+  const { product } = props;
+  return (
+    <>
+      <li>
+        <div key={product._id} className="product">
+          <Link to={"product/" + product._id}>
+            <img className="product-image" src={product.image} alt="product" />
+          </Link>
+          <div className="product-brand">{product.brand}</div>
+          <div className="product-name">
+            <Link to={"product/" + product._id}>{product.name}</Link>
+          </div>
+          <Rating rating={product.rating} numReviews={product.numReviews} />
+        </div>
+      </li>
+    </>
+  );
 }
