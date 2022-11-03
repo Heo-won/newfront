@@ -56,6 +56,7 @@ const Container = styled.div`
   background-attachment: fixed;
   overflow: hidden;
   height: 55vh;
+  margin-top: 3em;
 `;
 
 const ContainerInner = styled.div`
@@ -123,6 +124,14 @@ const DetailBtn = styled.button`
   width: 10vw;
   margin-top: 25em;
   margin-left: 20.3em;
+  padding: 0.5vw;
+  border-radius: 1em;
+  // hover
+  &:hover {
+    background-color: gray;
+    color: orange;
+    cursor: pointer;
+  }
 `;
 
 const RightDiv = styled.div`

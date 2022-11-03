@@ -15,6 +15,9 @@ const Blank = styled.div`
   width: 100%;
   height: 10em;
 `;
+const check = () => {
+  console.log("sdfsdf");
+};
 
 export const Main = ({ products, setProducts, convertPrice }) => {
   const allProducts = useRef();
@@ -133,6 +136,7 @@ export const Main = ({ products, setProducts, convertPrice }) => {
       <Blank />
       <StoreBenner />
 
+
       <div className={styles.category}>
         <h2>브랜드별로 보기</h2>
         <label>
@@ -217,6 +221,7 @@ export const Main = ({ products, setProducts, convertPrice }) => {
             ref={capsule}
           />
           캡슐 & 패키지
+
         </label>
       </div>
       <div className={styles.filter}>

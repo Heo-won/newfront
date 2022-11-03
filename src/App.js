@@ -66,10 +66,24 @@ function App() {
                 <Route path="/signup" element={user ? <Navigate to="/"></Navigate> : <Signup />}></Route>
                 <Route path="*" element={<Notfound />}></Route>
 
-                <Route path="/cart" element={<Basket cart={cart} setCart={setCart} convertPrice={convertPrice} checkLists={checkLists} setCheckLists={setCheckLists} />} />
-            </Routes>
-        </>
-    );
+
+        <Route
+          path="/cart"
+          element={
+            <Basket
+              cart={cart}
+              setCart={setCart}
+              convertPrice={convertPrice}
+              checkLists={checkLists}
+              setCheckLists={setCheckLists}
+            />
+          }
+        />
+      </Routes>
+      <Footer />
+    </>
+  );
+
 }
 
 export default App;

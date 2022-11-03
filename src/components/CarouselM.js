@@ -11,7 +11,7 @@ const Item1 = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 50vh;
   width: 100%;
   background-image: url(${IMG});
   color: #fff;
@@ -23,7 +23,7 @@ const Item2 = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 50vh;
   width: 100%;
   background-image: url(${IMG2});
   color: #fff;
@@ -35,7 +35,7 @@ const Item3 = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 50vh;
   width: 100%;
   background-image: url(${IMG});
   color: #fff;
@@ -47,7 +47,7 @@ const Item4 = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 50vh;
   width: 100%;
   background-image: url(${IMG});
   color: #fff;
@@ -59,7 +59,7 @@ const Item5 = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 50vh;
   width: 100%;
   background-image: url(${IMG});
   color: #fff;
@@ -81,11 +81,11 @@ export default function CarouselMain() {
       {/* <h3 className="EventCarousel">진행중인 이벤트</h3> */}
       <div className="CarouselApp">
         <Carousel breakPoints={breakPoints}>
-          <Item1>1</Item1>
-          <Item2>2</Item2>
-          <Item3>3</Item3>
-          <Item4>4</Item4>
-          <Item5>5</Item5>
+          <Item1></Item1>
+          <Item2></Item2>
+          <Item3></Item3>
+          <Item4></Item4>
+          <Item5></Item5>
         </Carousel>
       </div>
     </>

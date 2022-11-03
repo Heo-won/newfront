@@ -66,6 +66,13 @@ const DetailBtn = styled.button`
   width: 10vw;
   top: 85vh;
   left: 22em;
+  padding: 0.5vw;
+  border-radius: 1em;
+  &:hover {
+    background-color: gray;
+    color: orange;
+    cursor: pointer;
+  }
 `;
 
 const RightDiv = styled.div`
