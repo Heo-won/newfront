@@ -65,8 +65,23 @@ table tr th.title {
     font-size: 1em;
 }
 
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1300px) {
     .BoardTable {
         margin: 0 2em 0 2em;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .BoardTable .writeWrap div.write {
+        margin: 3em 0 0.3em 75%;
+        display: inline-block;
+        width: 5em;
+        height: 2em;
+        border: 1px solid rgba(0, 0, 0, 0.178);
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.032);
+        text-align: center;
+        line-height: 2.3em;
+        font-size: 1em;
     }
 }

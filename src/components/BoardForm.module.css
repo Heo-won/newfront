@@ -1,0 +1,90 @@
+/* src/page/main.css */
+.wrap {
+    width: 100%;
+    position: relative;
+    /* margin: 0 10%; */
+    display: flex;
+    justify-content: center;
+    left: -2%;
+    height: 100%;
+}
+
+.Write div h3 {
+    font-size: 2em;
+}
+
+.Write {
+    margin: 0 0 0 20%;
+    height: 100%;
+}
+
+.Write div {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.title_txt {
+    width: 80%;
+    padding-bottom: 20px;
+    margin-top: 15px;
+    border: none;
+    font-size: 22px;
+    /* border-top: solid 2px #e0e0e0; */
+    border-bottom: 2px double #e0e0e0;
+    font-weight: bold;
+}
+
+.title_txt:focus {
+    outline: none;
+}
+
+.content_txt {
+    width: 80%;
+    resize: none;
+    border: none;
+    height: 30em;
+    border-bottom: 2px double #e0e0e0;
+}
+
+.content_txt:focus {
+    outline: none;
+}
+
+.post_submit {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.post_submit button {
+    width: 10em;
+    height: 4em;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.032);
+    /* display: inline-block; */
+    /* width: 5em;
+    height: 2em;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.032);
+    text-align: center;
+    line-height: 2.3em;
+    font-size: 1em; */
+}
+
+@media screen and (max-width: 1000px) {
+    .Write {
+        margin: 0 0 0 5%;
+        height: 100%;
+    }
+
+    .Write div {
+        width: 80%;
+        /* margin-top: 30px;
+        margin-left: 50px; */
+    }
+}
