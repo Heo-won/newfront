@@ -2,59 +2,81 @@
   "products": [
     {
       "id": 1,
-      "name": "마로네 노트북 파우치",
-      "provider": "아이돈케어",
-      "price": 17100,
+      "name": "SS 블랙 데비 머그 414ml",
+      "provider": "starbucks",
+      "price": 15000,
       "image": "/images/image001.png"
     },
     {
       "id": 2,
-      "name": "에어팟 키링",
-      "provider": "gorigory",
-      "price": 3000,
+      "name": "그린 리유저블 콜드컵 709ml",
+      "provider": "starbucks",
+      "price": 23000,
       "image": "/images/image002.png"
     },
     {
       "id": 3,
-      "name": "폴리폴리 무릎 담요",
-      "provider": "100-QM",
-      "price": 7000,
+      "name": "그린 사이렌 클래식 머그 355ml",
+      "provider": "starbucks",
+      "price": 16000,
       "image": "/images/image003.png"
     },
     {
       "id": 4,
-      "name": "아이폰 스티커 팩",
-      "provider": "문구 판매소",
-      "price": 1900,
+      "name": "22 소프트 라벤더 스터드 콜드컵 710ml",
+      "provider": "starbucks",
+      "price": 29000,
       "image": "/images/image004.png"
     },
     {
       "id": 5,
-      "name": "개발자 키보드",
-      "provider": "numpy",
-      "price": 99000,
+      "name": "서울 제주 데미머그 세트",
+      "provider": "starbucks",
+      "price": 36000,
       "image": "/images/image005.png"
     },
     {
       "id": 6,
-      "name": "개발자 커스텀 케이블",
-      "provider": "보물보따리",
-      "price": 69000,
+      "name": "JMZ 그린 사이렌 보온병 350ml",
+      "provider": "starbucks",
+      "price": 29000,
       "image": "/images/image006.png"
     },
     {
       "id": 7,
-      "name": "문 긁는 고양이",
-      "provider": "집",
-      "price": 1000000,
+      "name": "티바나 민트 블렌드 12개입",
+      "provider": "starbucks",
+      "price": 12000,
       "image": "/images/image007.png"
     },
     {
       "id": 8,
-      "name": "우당탕탕 인테리어 책",
-      "provider": "우당탕탕",
+      "name": "티바나 얼 그레이 12개입",
+      "provider": "starbucks",
+      "price": 12000,
+      "image": "/images/image008.png"
+    },
+    {
+      "id": 8,
+      "name": "티바나 얼 그레이 12개입",
+      "provider": "starbucks",
+      "price": 5900,
+      "image": "/images/image008.png"
+    },
+    {
+      "id": 8,
+      "name": "티바나 얼 그레이 12개입",
+      "provider": "starbucks",
+      "price": 5900,
+      "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/09/[11120817]_20210927160655266.jpg"
+    },
+    {
+      "id": 8,
+      "name": "티바나 얼 그레이 12개입",
+      "provider": "starbucks",
       "price": 5900,
       "image": "/images/image008.png"
     }
+  
   ]
 }

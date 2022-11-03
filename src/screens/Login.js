@@ -9,13 +9,14 @@ import {
   Routes,
   Link,
 } from "react-router-dom";
+
 import Logincss from "./Login.css";
 import styled from "styled-components";
 
-const Blank = styled.div`
-  width: 100%;
-  height: 10em;
-`;
+
+import { useEffect } from "react";
+// import { googleLogout } from "@react-oauth/google";
+// import { GoogleOAuthProvider } from "@react-oauth/google";
 
 export default function Login() {
   const [email, setEmail] = useState("");
