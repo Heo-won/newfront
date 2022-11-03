@@ -71,13 +71,15 @@ const DetailBtn = styled.button`
 const RightDiv = styled.div`
   position: relative;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 50%;
   height: 100%;
-  background-image: url(${CoffeeImg});
+  /* background-image: url(${CoffeeImg}); */
 `;
 
-const Img = styled.img``;
+const Img = styled.img`
+  width: 100%;
+`;
 
 export default function NewPost() {
   return (
@@ -90,7 +92,7 @@ export default function NewPost() {
             <TitleThree>오늘의 이야기, 일상의 커피를 즐겨보세요</TitleThree>
             <DetailBtn>자세히 보기</DetailBtn>
           </LeftDiv>
-          <RightDiv>{/* {<Img src={CoffeeImg}></Img>}*/}</RightDiv>
+          <RightDiv>{<Img src={CoffeeImg}></Img>}</RightDiv>
         </ContainerInner>
       </Container>
     </>

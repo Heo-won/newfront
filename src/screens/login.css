@@ -2,6 +2,7 @@
 .container_login {
     /* border: 3px solid #000; */
 
+.blank {
     align-items: center;
     width: 100%;
     height: 100vh;
@@ -14,6 +15,7 @@
     color: white;
     /* border: 3px solid yellow; */
     background-blend-mode: soft-light, screen;
+
 }
 
 .container_login .login {
