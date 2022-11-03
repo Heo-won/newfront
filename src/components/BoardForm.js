@@ -14,12 +14,12 @@ export default function BoardForm() {
     const [content, setContent] = useState("");
     const [error, setError] = useState(null);
     const [emptyFields, setEmptyFields] = useState([]);
+    const [seq, setSeq] = useState(0);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const board = { title, content };
-
+        const board = { title, content, seq };
         const response = await fetch("/api/boards", {
             method: "POST",
             body: JSON.stringify(board),
@@ -53,6 +53,8 @@ export default function BoardForm() {
                 <input type="text" onChange={(e) => setTitle(e.target.value)} value={title} className={emptyFields.includes("title") ? "error" : ""} />
                 <label>내용</label>
                 <input type="textarea" onChange={(e) => setContent(e.target.value)} value={content} />
+                <label>seq</label>
+                <input type="text" onChange={(e) => setSeq(e.target.value)} value={seq} />
                 <button>글쓰기</button>
                 {error && <div className="error">{error}</div>}
             </form>
