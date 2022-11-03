@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import styles from "./eventDetail.module.css";
 import Footer from "./Footer";
 
@@ -18,6 +18,9 @@ const EventDetail = () => {
         <>
             <div className={styles.wrapper}>
                 <div className={styles.container}>
+                    <div className={styles.back_button}>
+                        <Link to="/api/event">목록</Link>
+                    </div>
                     <div className={styles.box}>
                         <div className={styles.product_titleBox}>
                             <div className={styles.product_title}>{product.title}</div>
