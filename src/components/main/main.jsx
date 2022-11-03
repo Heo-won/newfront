@@ -15,6 +15,9 @@ const Blank = styled.div`
   width: 100%;
   height: 10em;
 `;
+const check = () => {
+  console.log("sdfsdf");
+};
 
 export const Main = ({ products, setProducts, convertPrice }) => {
   useEffect(() => {
@@ -45,6 +48,26 @@ export const Main = ({ products, setProducts, convertPrice }) => {
 
       <div className="category">
         <h2>분류 보기</h2>
+        <label>
+          <input type="checkbox" name="category" value="원두" onClick={check} />
+          원두
+        </label>
+        <label>
+          <input type="checkbox" name="category" value="비아" />
+          비아
+        </label>
+        <label>
+          <input type="checkbox" name="category" value="머그" />
+          머그
+        </label>
+        <label>
+          <input type="checkbox" name="category" value="텀블러" />
+          텀블러
+        </label>
+        <label>
+          <input type="checkbox" name="category" value="캡슐" />
+          캡슐
+        </label>
       </div>
       <div className={styles.filter}>
         <p onClick={() => sortProduct("recent")}>최신순</p>

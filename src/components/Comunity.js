@@ -17,7 +17,7 @@ const Container = styled.div`
   background-color: grey;
   /* background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); */
   overflow: hidden;
-  height: 50vh;
+  height: 60vh;
   background-blend-mode: soft-light, screen;
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,9 +82,16 @@ const Img2 = styled.img`
 
 const Btn = styled.button`
   position: absolute;
-  left: 58em;
-  top: 22em;
+  left: 60%;
+  top: 25em;
   opacity: 1;
+  padding: 0.5vw;
+  border-radius: 1em;
+  &:hover {
+    background-color: gray;
+    color: orange;
+    cursor: pointer;
+  }
 `;
 
 const ContainerInner = styled.div``;

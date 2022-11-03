@@ -197,21 +197,27 @@ ul {
   grid-area: main;
 }
 .footer {
-
-grid-area: footer;
+  grid-area: footer;
   background-color: #efefef;
-  height: 20vh;
+  justify-content: center;
+  text-align: center;
+  height: 30vh;
   color: #572a31;
-  display: flex;
+  /* display: flex; */
+  /* align-items: center; */
   justify-content: center;
   align-items: center;
   bottom: 0;
-  margin-top: 3vw;
   /* width: 100vw; */
-
+}
+.footer .first {
+  padding-top: 3em;
+  margin-top: 3vh;
 }
 .footer p {
-  display: flex;
+  /* margin-top: 2em; */
+  /* display: flex; */
+  padding-bottom: 2em;
   justify-content: center;
   align-items: center;
 }
