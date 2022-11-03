@@ -17,6 +17,11 @@
   margin-top: 2em;
 }
 
+.filter p:hover {
+  /* color: #ff8000; */
+  font-weight: bold;
+}
+
 .flex_wrap {
   max-width: 1440px;
   display: grid;
@@ -25,6 +30,62 @@
   gap: 70px 0px;
   margin: 0 auto;
   margin-top: 1em;
+}
+
+/* 카테고리 div 꾸미기 */
+.category {
+  width: 100%;
+  /* height: 40%; */
+  background-color: rgb(255, 255, 255);
+  padding: 1em 10em;
+  color: rgb(0, 0, 0);
+  margin-bottom: 1em;
+}
+.category h2 {
+  color: #ff8000;
+  font-size: 2em;
+  padding: 0 1em;
+}
+.category label {
+  padding: 1em;
+  font-size: 2em;
+}
+.category input {
+  color: rgb(134, 126, 126);
+  width: 20px;
+  height: 20px;
+}
+
+.catergory label {
+  font-size: 10px;
+}
+
+/* 카테고리 div 꾸미기 */
+.category2 {
+  width: 100%;
+  /* height: 40%; */
+  border: 1px solid #000;
+  background-color: rgb(255, 255, 255);
+  padding: 1em 10em 3em 10em;
+  color: rgb(0, 0, 0);
+}
+.category2 h2 {
+  font-size: 2em;
+  padding: 0 1em;
+  color: #ff8000;
+}
+.category2 label {
+  padding: 1em;
+  font-size: 2em;
+}
+.category2 input {
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+
+.catergory2 label {
+  font-size: 10px;
 }
 
 @media (max-width: 1440px) {
@@ -43,4 +104,4 @@
   .filter p {
     font-size: 12px;
   }
-}
+} ;

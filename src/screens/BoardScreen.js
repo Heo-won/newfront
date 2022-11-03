@@ -21,7 +21,6 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     // height: 100vh;
-
     // justify-content: center;
     /* border: 1px solid #000; */
 `;

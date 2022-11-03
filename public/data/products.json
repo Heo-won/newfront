@@ -56,7 +56,7 @@
       "id": 7,
       "name": "티바나 민트 블렌드 12개입",
       "provider": "starbucks",
-      "sort": "패키지",
+      "sort": "캡슐",
       "price": 12000,
       "image": "/images/image007.png"
     },
@@ -64,7 +64,7 @@
       "id": 8,
       "name": "티바나 얼 그레이 12개입",
       "provider": "starbucks",
-      "sort": "패키지",
+      "sort": "캡슐",
       "price": 12000,
       "image": "/images/image008.png"
     },
@@ -72,7 +72,7 @@
       "id": 9,
       "name": "티바나 히비스커스 12개입",
       "provider": "starbucks",
-      "sort": "패키지",
+      "sort": "캡슐",
       "price": 12000,
       "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/08/[11120816]_20210831161156862.jpg"
     },
@@ -80,7 +80,7 @@
       "id": 10,
       "name": "티바나 유스베리 12개입",
       "provider": "starbucks",
-      "sort": "패키지",
+      "sort": "캡슐",
       "price": 12000,
       "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/09/[11120817]_20210927160655266.jpg"
     },
@@ -250,7 +250,7 @@
       "id": 31,
       "name": "비아 카페 모카 라떼 4개입",
       "sort": "비아",
-      "provider": "starbucks",
+      "provider": "탐앤탐스",
       "price": 19000,
       "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2018/10/[11087641]_20181010170423761.jpg"
     },
@@ -282,7 +282,7 @@
       "id": 35,
       "name": "스타벅스 네스프레소 콜롬비아 10개입",
       "sort": "캡슐",
-      "provider": "starbucks",
+      "provider": "탐앤탐스",
       "price": 19000,
       "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/09/[9300000003561]_20210903125819608.jpg"
     },
@@ -325,12 +325,123 @@
       "provider": "starbucks",
       "price": 19000,
       "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/09/[9300000003567]_20210903133730300.jpg"
-    }
+    },
+    {
+      "id": 41,
+      "name": "골든펄 망고 패션프룻 그린티",
+      "sort": "음료",
+      "provider": "탐앤탐스",
+      "price": 5300,
+      "image": "https://www.gong-cha.co.kr/uploads/product/20220523/dVjxP2RuwvZEno0f_20220523.png"
+    },
+    {
+      "id": 42,
+      "name": "골든펄 딸기 캐모마일티",
+      "sort": "음료",
+      "provider": "공차",
+      "price": 5800,
+      "image": "https://www.gong-cha.co.kr/uploads/product/20220523/kU5hjzelOR6EofPV_20220523.png"
+    },
+     {
+      "id": 43,
+      "name": "납작복숭아 블루밍 크러쉬",
+      "sort": "음료",
+      "provider": "공차",
+      "price": 5500,
+      "image": "https://www.gong-cha.co.kr/uploads/product/20220418/eEkJyFYIirXlP1K0_20220418.png"
+    },
+    {
+      "id": 44,
+      "name": "납작복숭아 타르트 크러쉬",
+      "sort": "음료",
+      "provider": "공차",
+      "price": 5300,
+      "image": "https://www.gong-cha.co.kr/uploads/product/20220418/824oEcBzWQqMt3rT_20220418.png"
+    },
+    {
+      "id": 45,
+      "name": "골든펄 돌체 밀크티",
+      "sort": "음료",
+      "provider": "공차",
+      "price": 5300,
+      "image": "https://www.gong-cha.co.kr/uploads/product/20220523/cjyf7obrMExlSiTH_20220523.png"
+    },
+    {
+      "id": 46,
+      "name": "얼그레이 카페라떼 + 펄",
+      "sort": "음료",
+      "provider": "공차",
+      "price": 5500,
+      "image": "https://www.gong-cha.co.kr/uploads/product/20220728/7jChZf0od6JMYE3P_20220728.jpg"
+    },
 
-    
+    {
+      "id": 47,
+      "name": "공차슈페너",
+      "sort": "음료",
+      "provider": "공차",
+      "price": 4300,
+      "image": "https://www.gong-cha.co.kr/uploads/product/20220728/UuG3aLFSi5WNyHq6_20220728.jpg"
+    },
 
+    {
+      "id": 48,
+      "name": "블랙 밀크티+펄",
+      "sort": "음료",
+      "provider": "공차",
+      "price": 5300,
+      "image": "https://www.gong-cha.co.kr/uploads/product/20211013/u1lrRFNZX2WiO0hq_20211013.png"
+    },
 
-    
-  
+    {
+      "id": 49,
+      "name": "타로 밀크티+펄",
+      "sort": "음료",
+      "provider": "공차",
+      "price": 4400,
+      "image": "https://www.gong-cha.co.kr/uploads/product/20211013/GYL3T9aunz2qxFMQ_20211013.png"
+    },
+
+    {
+      "id": 50,
+      "name": "피스타치오 밀크티+펄",
+      "sort": "음료",
+      "provider": "공차",
+      "price": 5200,
+      "image": "https://www.gong-cha.co.kr/uploads/product/20211013/x0wbCLMVItc4uTUH_20211013.png"
+    },
+
+    {
+      "id": 51,
+      "name": "청포도 그린티+알로에",
+      "sort": "음료",
+      "provider": "공차",
+      "price": 5500,
+      "image": "https://www.gong-cha.co.kr/uploads/product/20211012/ZVK1TYI0DjHv3nao_20211012.png"
+    },
+    {
+      "id": 52,
+      "name": "망고 요구르트+화이트펄",
+      "sort": "음료",
+      "provider": "공차",
+      "price": 5200,
+      "image": "https://www.gong-cha.co.kr/uploads/product/20211013/037UvuEsP4NLeWtV_20211013.png"
+    },
+    {
+      "id": 53,
+      "name": "브라운슈가 쥬얼리 밀크티",
+      "sort": "음료",
+      "provider": "공차",
+      "price": 4400,
+      "image": "https://www.gong-cha.co.kr/uploads/product/20211013/PBEL0KAH6zpfGTh7_20211013.png"
+    },
+    {
+      "id": 54,
+      "name": "딸기 쥬얼리 요구르트 크러쉬",
+      "sort": "음료",
+      "provider": "공차",
+      "price": 5300,
+      "image": "https://www.gong-cha.co.kr/uploads/product/20211013/tcOg40QqkZ6dyEs1_20211013.png"
+    }  
   ]
 }

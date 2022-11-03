@@ -209,10 +209,12 @@ ul {
   align-items: center;
   bottom: 0;
   /* width: 100vw; */
+
 }
 .footer .first {
   padding-top: 3em;
   margin-top: 3vh;
+
 }
 .footer p {
   /* margin-top: 2em; */
