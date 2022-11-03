@@ -2,47 +2,89 @@ import React, { useState } from "react";
 import { useLogin } from "../hooks/useLogin";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { BrowserRouter, BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import styles from "./login.css";
+import {
+  BrowserRouter,
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Link,
+} from "react-router-dom";
+import Logincss from "./Login.css";
 import styled from "styled-components";
 
 const Blank = styled.div`
-    width: 100%;
-    height: 10em;
+  width: 100%;
+  height: 10em;
 `;
 
 export default function Login() {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const { login, error, isLoading } = useLogin();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const { login, error, isLoading } = useLogin();
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        // console.log(email, password);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // console.log(email, password);
 
-        await login(email, password);
-    };
+    await login(email, password);
+  };
 
-    return (
-        <>
-            {/* <Header></Header> */}
-            <Blank />
-            <form className="login" onSubmit={handleSubmit}>
-                <h3>로그인</h3>
-                <label>이메일</label>
-                <input type="text" onChange={(e) => setEmail(e.target.value)} value={email} />
-                <label>비밀번호</label>
-                <input type="password" onChange={(e) => setPassword(e.target.value)} value={password} />
+  return (
+    <>
+      {/* <Header></Header> */}
+      <div className="container_login">
+        <form className="login" onSubmit={handleSubmit}>
+          <h1>WELCOME! </h1>
+          {/* <label>Email:</label> */}
+          <input
+            type="text"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+            placeholder="Email"
+          />
+          {/* <label>Password:</label> */}
+          <input
+            type="password"
+            onChange={(e) => setPassword(e.target.value)}
+            value={password}
+            placeholder="Password"
+          />
 
-                <button disabled={isLoading}>로그인</button>
-                {error && <div className="error">{error}</div>}
-                <button>
-                    <Link to="/signup">회원가입</Link>
-                </button>
-            </form>
-            <Footer></Footer>
-        </>
-    );
+          <button disabled={isLoading}>
+            <p>Log in</p>
+          </button>
+          {error && <div className="error">{error}</div>}
+          <button>
+            <Link to="/signup">
+              <p>회원가입</p>
+            </Link>
+          </button>
+          <div className="sns_login">
+            {/* <div className="google_login" onClick={googlelogin}>
+              <GoogleOAuthProvider
+                clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
+              >
+                <GoogleLogin
+                  onSuccess={(credentialResponse) => {
+                    console.log(credentialResponse);
+                    var decoded = jwt_decode(credentialResponse.credential);
+                    console.log(decoded);
+                  }}
+                  onError={() => {
+                    console.log("Login Failed");
+                  }}
+                  cookiePolicy={"single_host_origin"}
+                />
+              </GoogleOAuthProvider>
+            </div> */}
+          </div>
+        </form>
+        {/* 구글 로그인 양식 */}
+      </div>
+
+      <Footer></Footer>
+    </>
+  );
 }
 
 // import React, { useState } from "react";
