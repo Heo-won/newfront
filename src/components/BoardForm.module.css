@@ -26,7 +26,8 @@
 
 .title_txt {
     width: 80%;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    margin-top: 15px;
     border: none;
     font-size: 22px;
     /* border-top: solid 2px #e0e0e0; */
