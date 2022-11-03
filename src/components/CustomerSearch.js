@@ -96,16 +96,6 @@ const Answer = styled.span`
   margin-left: 1em;
 `;
 
-const DetailBtn = styled.button`
-  position: absolute;
-  background-color: whtie;
-  color: #404040;
-  font-weight: bold;
-  width: 10vw;
-  top: 85vh;
-  left: 22em;
-`;
-
 const RightDiv = styled.div`
   position: relative;
   background-repeat: no-repeat;
@@ -133,8 +123,6 @@ export default function CustomerSearch() {
               <TitleOne>FAQ</TitleOne>
               <TitleTwo>자주하는 질문</TitleTwo>
               <TitleThree>궁금하신 점을 검색해보세요!</TitleThree>
-
-              <DetailBtn>자세히 보기</DetailBtn>
             </LeftDiv>
             <RightDiv>
               <InnerLeft>

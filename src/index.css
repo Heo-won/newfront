@@ -197,8 +197,7 @@ ul {
   grid-area: main;
 }
 .footer {
-
-grid-area: footer;
+  grid-area: footer;
   background-color: #efefef;
   height: 20vh;
   color: #572a31;
@@ -208,7 +207,6 @@ grid-area: footer;
   bottom: 0;
   margin-top: 3vw;
   /* width: 100vw; */
-
 }
 .footer p {
   display: flex;

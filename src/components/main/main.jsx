@@ -133,7 +133,6 @@ export const Main = ({ products, setProducts, convertPrice }) => {
       <Blank />
       <StoreBenner />
 
-
       <div className={styles.category}>
         <h2>브랜드별로 보기</h2>
         <label>
