@@ -1,0 +1,25 @@
+/* 카테고리 div 꾸미기 */
+.category {
+  width: 100%;
+  /* height: 40%; */
+  border: 1px solid #000;
+  background-color: black;
+  padding: 5em;
+  color: white;
+}
+.category h2 {
+  font-size: 2em;
+}
+.category label {
+  padding: 1em;
+  font-size: 2em;
+}
+.category input {
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+
+.catergory label {
+  font-size: 10px;
+}
