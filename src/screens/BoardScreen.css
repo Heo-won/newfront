@@ -1,21 +1,72 @@
-#board-list {
-    align-items: center;
+.container {
+    font-size: 0.8rem;
+    box-sizing: border-box;
 }
 
 table {
-    width: 90%;
+    /* margin-top: 3em; */
 }
 
-tr {
-    box-sizing: border-box;
+#board-list {
+    width: 100%;
+    align-items: center;
+}
+
+tr.head {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+table {
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.032);
+}
+
+tr.head {
+    border-top: 2px solid rgba(0, 0, 0, 0.212);
+    margin-top: 3em;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
 }
+
 th,
 td {
     padding: 10px;
-    border-bottom: 1px solid #cd5c5c;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+}
+
+.writtentime {
+    width: 11em;
+}
+
+table tr th.title {
+    width: 30em;
+}
+
+.writeWrap {
+}
+
+.writeWrap a {
+    width: inherit;
+}
+
+.BoardTable .writeWrap div.write {
+    margin: 3em 0 0.3em 92%;
+    display: inline-block;
+    width: 5em;
+    height: 2em;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.032);
+    text-align: center;
+    line-height: 2.3em;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 1270px) {
+    .BoardTable {
+        margin: 0 2em 0 2em;
+    }
 }

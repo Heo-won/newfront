@@ -14,7 +14,7 @@ export default function Notfound() {
             <Header />
             <Blank />
             <img src="/images/notfound.png" alt="notfound" />
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 }

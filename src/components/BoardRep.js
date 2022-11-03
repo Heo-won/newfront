@@ -23,28 +23,23 @@ export default function BoardRep({ board }) {
     const change_date = (published_at) => {
         var moment = require("moment");
 
-        const publish_date = moment(published_at).format("YYYY년 MM월 DD일");
+        const publish_date = moment(published_at).format("YYYY-MM-DD");
         return publish_date;
     };
 
     return (
         <>
-            <tr>
+            <tr className="bodytr">
                 <td className="seq" key={board.seq}>
                     {board.seq}
                 </td>
                 <td className="left">
-                    <Link to={`${board.seq}`}>
-                        <div className="title">{board.title}</div>
-                    </Link>
+                    <div className="title">
+                        <Link to={`${board.seq}`}>{board.title}</Link>
+                    </div>
                 </td>
                 {/* <td className="content">{board.content}</td> */}
-                <td className="writtentime">
-                    {/* {board.writtenTime} */}
-                    {/* {console.log(change_date(board.writtenTime))} */}
-                    {/* {formatRelative(subDays(new Date(board.writtenTime), 3), new Date())} */}
-                    {change_date(board.writtenTime)}
-                </td>
+                <td className="writtentime">{change_date(board.writtenTime)}</td>
                 <td className="like">{board.like}</td>
                 <td className="view">{board.view}</td>
                 {/* <td>

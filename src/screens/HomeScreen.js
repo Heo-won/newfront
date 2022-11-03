@@ -44,14 +44,14 @@ export default function HomeScreen() {
                 </ul>
                 <p>1</p>
                 {/* </div> */}
-                <Footer />
+                {/* <Footer /> */}
             </>
         );
     } else {
         return (
             <>
                 <div>통신이 이상합니다.</div>
-                <Footer />
+                {/* <Footer /> */}
             </>
         );
     }
