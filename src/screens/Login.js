@@ -10,9 +10,8 @@ import {
   Link,
 } from "react-router-dom";
 
-import Logincss from "./Login.css";
+import Logincss from "./login.css";
 import styled from "styled-components";
-
 
 import { useEffect } from "react";
 // import { googleLogout } from "@react-oauth/google";

@@ -9,7 +9,7 @@ import {
   Link,
 } from "react-router-dom";
 import { useSignup } from "../hooks/useSignup";
-import Signupcss from "./Signup.css";
+import Signupcss from "./signup.css";
 import styled from "styled-components";
 
 export default function Signup() {
