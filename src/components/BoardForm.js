@@ -3,6 +3,7 @@ import { useBoardsContext } from "../hooks/useBoardsContext";
 import styled from "styled-components";
 import styles from "./BoardForm.module.css";
 import CommunityBanner from "./communityBanner";
+import { useNavigate } from "react-router-dom";
 
 const Blank = styled.div`
     width: 100%;
@@ -16,6 +17,7 @@ export default function BoardForm() {
     const [content, setContent] = useState("");
     const [error, setError] = useState(null);
     const [emptyFields, setEmptyFields] = useState([]);
+    const navi = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -51,8 +53,8 @@ export default function BoardForm() {
             <CommunityBanner />
             <form className="create" onSubmit={handleSubmit}>
                 <div className="wrap">
-                    <h3>글 작성하기</h3>
-                    <div className={styles.Write}>
+                    <div className={`${styles.Write} ${() => navi("/api/board")}`}>
+                        <h3>글 작성하기</h3>
                         <div>
                             <input
                                 type="text"
@@ -66,9 +68,15 @@ export default function BoardForm() {
                             <textarea onChange={(e) => setContent(e.target.value)} value={content} placeholder="내용" className={styles.content_txt} />
                         </div>
                     </div>
+                    <div>
+                        <div className={styles.post_submit}>
+                            <div>
+                                <button> 포스트 등록 </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <button>글쓰기</button>
                 {error && <div className="error">{error}</div>}
             </form>
         </>

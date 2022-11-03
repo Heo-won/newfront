@@ -11,7 +11,7 @@
 }
 
 .title_txt {
-    width: 70%;
+    width: 80%;
     padding-bottom: 30px;
     border: none;
     font-size: 22px;
@@ -27,9 +27,34 @@
     width: 91%;
     resize: none;
     border: none;
-    height: 500px;
+    height: 30em;
 }
 
 .content_txt:focus {
     outline: none;
+}
+
+.post_submit {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.post_submit button {
+    width: 10em;
+    height: 4em;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.032);
+    /* display: inline-block; */
+    /* width: 5em;
+    height: 2em;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.032);
+    text-align: center;
+    line-height: 2.3em;
+    font-size: 1em; */
 }
