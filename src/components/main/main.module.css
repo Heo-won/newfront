@@ -27,6 +27,63 @@
   margin-top: 1em;
 }
 
+/* 카테고리 div 꾸미기 */
+.category {
+  width: 100%;
+  /* height: 40%; */
+  border: 1px solid #000;
+  background-color: rgb(255, 255, 255);
+  padding: 1em 5em;
+  color: rgb(0, 0, 0);
+}
+.category h2 {
+  font-size: 2em;
+}
+.category label {
+  padding: 1em;
+  font-size: 2em;
+}
+.category input {
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+
+.catergory label {
+  font-size: 10px;
+}
+
+/* 카테고리 div 꾸미기 */
+.category2 {
+  width: 100%;
+  /* height: 40%; */
+  border: 1px solid #000;
+  background-color: rgb(255, 255, 255);
+  padding: 1em 5em 3em 5em;
+  color: rgb(0, 0, 0);
+}
+.category2 h2 {
+  font-size: 2em;
+}
+.category2 label {
+  padding: 1em;
+  font-size: 2em;
+}
+.category2 input {
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+
+.catergory2 label {
+  font-size: 10px;
+}
+
+/* 색상 변경 */
+.change input,
+.change progress {
+  accent-color: red;
+}
 @media (max-width: 1440px) {
   .flex_wrap {
     grid-template-columns: repeat(2, 1fr);
@@ -43,4 +100,4 @@
   .filter p {
     font-size: 12px;
   }
-}
+} ;
