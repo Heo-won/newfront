@@ -11,11 +11,9 @@ import {
 } from "react-router-dom";
 import Logincss from "./Login.css";
 import styled from "styled-components";
-
-const Blank = styled.div`
-  width: 100%;
-  height: 10em;
-`;
+import { useEffect } from "react";
+import { googleLogout } from "@react-oauth/google";
+// import { GoogleOAuthProvider } from "@react-oauth/google";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -28,6 +26,8 @@ export default function Login() {
 
     await login(email, password);
   };
+
+  // google login
 
   return (
     <>
@@ -60,23 +60,13 @@ export default function Login() {
             </Link>
           </button>
           <div className="sns_login">
-            {/* <div className="google_login" onClick={googlelogin}>
-              <GoogleOAuthProvider
-                clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
-              >
-                <GoogleLogin
-                  onSuccess={(credentialResponse) => {
-                    console.log(credentialResponse);
-                    var decoded = jwt_decode(credentialResponse.credential);
-                    console.log(decoded);
-                  }}
-                  onError={() => {
-                    console.log("Login Failed");
-                  }}
-                  cookiePolicy={"single_host_origin"}
-                />
-              </GoogleOAuthProvider>
-            </div> */}
+            {/* <GoogleLogin
+              clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
+              buttonText="Log in with Google"
+              onSuccess={handleLogin}
+              onFailure={handleFailure}
+              cookiePolicy={"single_host_origin"}
+            ></GoogleLogin> */}
           </div>
         </form>
         {/* 구글 로그인 양식 */}
