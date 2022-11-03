@@ -14,11 +14,12 @@
 }
 
 .Write {
-    width: 80%;
+    margin: 0 0 0 20%;
     height: 100%;
 }
 
 .Write div {
+    width: 80%;
     margin-top: 30px;
     margin-left: 50px;
 }
@@ -72,4 +73,17 @@
     text-align: center;
     line-height: 2.3em;
     font-size: 1em; */
+}
+
+@media screen and (max-width: 1000px) {
+    .Write {
+        margin: 0 0 0 5%;
+        height: 100%;
+    }
+
+    .Write div {
+        width: 80%;
+        /* margin-top: 30px;
+        margin-left: 50px; */
+    }
 }

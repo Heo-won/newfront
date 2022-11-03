@@ -53,7 +53,7 @@ export default function BoardForm() {
             <CommunityBanner />
             <form className="create" onSubmit={handleSubmit}>
                 <div className="wrap">
-                    <div className={`${styles.Write} ${() => navi("/api/board")}`}>
+                    <div className={styles.Write}>
                         <div>
                             <h3>글 작성하기</h3>
                             <input
