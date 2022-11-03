@@ -1,390 +1,388 @@
 @font-face {
-  font-family: "MonoplexKR-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2")
-    format("woff2");
-  font-weight: 400;
-  font-style: normal;
+    font-family: "MonoplexKR-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
 }
 @font-face {
-  font-family: "OTWelcomeRA";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2")
-    format("woff2");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "OTWelcomeRA";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-  margin: 0;
+    margin: 0;
 
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
-  font-family: "OTWelcomeRA";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: "OTWelcomeRA";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: "OTWelcomeRA";
+    font-family: "OTWelcomeRA";
 }
 
 html {
-  font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem */
-  box-sizing: border-box;
+    font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem */
+    box-sizing: border-box;
 }
 body {
-  font: 1.6rem;
-  font-family: "OTWelcomeRA";
-  height: 100vh;
-  margin: 0;
-  /* padding: 0 10vw; */
+    font: 1.6rem;
+    font-family: "OTWelcomeRA";
+    height: 100vh;
+    margin: 0;
+    /* padding: 0 10vw; */
 }
 
 .grid-container {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  grid-template-columns: 1fr;
-  grid-template-rows: 5rem 1fr 5rem;
-  height: 100%;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100%;
 }
 
 .brand button {
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 0.1rem #a4a4a4 solid;
-  font-size: 1.6rem;
-  font-family: "OTWelcomeRA";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #f8f8f8;
-  cursor: pointer;
-  display: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem #a4a4a4 solid;
+    font-size: 1.6rem;
+    font-family: "OTWelcomeRA";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    display: none;
 }
 
 .brand button:hover {
-  border: 0.1rem #404040 solid;
-  transition: 0.1s ease;
+    border: 0.1rem #404040 solid;
+    transition: 0.1s ease;
 }
 
 button.primary {
-  background-color: #f0c040;
-  /* background-color: #e4134e; */
+    background-color: #f0c040;
+    /* background-color: #e4134e; */
 }
 button.block {
-  width: 100%;
+    width: 100%;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 .out {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 .header {
-  font-family: "OTWelcomeRA";
-  grid-area: header;
-  background-color: #ffffff;
-  height: 10em;
-  color: #312b2b;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 0 30px;
-  /* max-width: 1300px; */
-  /* margin: auto; */
-  position: fixed;
-  z-index: 999;
-  box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.062);
-  width: 100vw;
-  box-sizing: border-box;
+    font-family: "OTWelcomeRA";
+    grid-area: header;
+    background-color: #ffffff;
+    height: 10em;
+    color: #312b2b;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 30px;
+    /* max-width: 1300px; */
+    /* margin: auto; */
+    position: fixed;
+    z-index: 999;
+    box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.062);
+    width: 100vw;
+    box-sizing: border-box;
 }
 
 .brand {
-  min-width: 100px;
+    min-width: 100px;
 }
 
 .brand a {
-  color: #312b2b;
-  font-size: 3em;
-  font-weight: bold;
-  text-decoration: none;
-  line-height: 2em;
+    color: #312b2b;
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2em;
 }
 
 .backToResult {
-  font-size: 200px;
+    font-size: 200px;
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  /* margin-top: 10vh; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: 10vh; */
 }
 
 .row.center {
-  justify-content: center;
+    justify-content: center;
 }
 .row.top {
-  align-items: center;
+    align-items: center;
 }
 .col-1 {
-  flex: 1 1 25rem;
+    flex: 1 1 25rem;
 }
 .col-1 ul {
-  border: 1px solid red;
+    border: 1px solid red;
 }
 .col-2 {
-  flex: 2 1 50rem;
+    flex: 2 1 50rem;
 }
 .large {
-  width: 30vh;
+    width: 30vh;
 }
 
 .header.brand.button {
-  background-image: url("../src/images/drink.png");
+    background-image: url("../src/images/drink.png");
 }
 
 .header-left-links {
-  /* margin: 0 0 0 20em; */
-  display: flex;
-  justify-content: space-between;
-  /* width: 70em; */
+    /* margin: 0 0 0 20em; */
+    display: flex;
+    justify-content: space-between;
+    /* width: 70em; */
 }
 
 .header-left-links a {
-  color: #312b2b;
-  text-decoration: none;
-  padding: 1em 1.1em;
-  font-size: 2.3em;
+    color: #312b2b;
+    text-decoration: none;
+    padding: 1em 1.1em;
+    font-size: 2.3em;
 
-  /* flex-direction: row; */
+    /* flex-direction: row; */
 }
 .header-left-links a:hover {
-  transition: 0.1s ease;
-  color: #ff8000;
+    transition: 0.1s ease;
+    color: #ff8000;
 }
 
 .header-left-links a:hover .SubSpan {
-  transition: 0.1s ease;
+    transition: 0.1s ease;
 }
 
 .header-left-links .SubSpan {
-  font-size: 0.5em;
-  position: relative;
-  bottom: 1.3em;
-  font-weight: bold;
-  color: #1566f8;
+    font-size: 0.5em;
+    position: relative;
+    bottom: 1.3em;
+    font-weight: bold;
+    color: #1566f8;
 }
 .header-right-links a {
-  color: #312b2b;
-  text-decoration: none;
-  padding: 1rem;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-right: 1em;
-  line-height: 3em;
+    color: #312b2b;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 1em;
+    line-height: 3em;
 }
 .header-right-links a:hover {
-  transition: 0.1s ease;
-  color: #ff8000;
+    transition: 0.1s ease;
+    color: #ff8000;
 }
 .main {
-  grid-area: main;
+    grid-area: main;
 }
 .footer {
-  grid-area: footer;
-  background-color: #efefef;
-  height: 20vh;
-  color: #572a31;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 0;
-  /* margin-top: 3vw; */
-  /* width: 100vw; */
+    grid-area: footer;
+    background-color: #efefef;
+    height: 20vh;
+    color: #572a31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    margin-top: 4vw;
+    /* width: 100vw; */
 }
 .footer p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 a:hover {
-  color: #ff8000;
-  transition: 0.1s ease;
+    color: #ff8000;
+    transition: 0.1s ease;
 }
 /* Home Screen */
 .products {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 .products li {
-  list-style-type: none;
-  padding: 0;
-  flex: 0 1 34rem;
-  margin: 1rem;
-  height: 50rem;
-  border-bottom: 0.1rem #c0c0c0 solid;
+    list-style-type: none;
+    padding: 0;
+    flex: 0 1 34rem;
+    margin: 1rem;
+    height: 50rem;
+    border-bottom: 0.1rem #c0c0c0 solid;
 }
 .product {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  margin: 0 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 5vw;
 }
 .product-name {
-  font-size: 2rem;
-  font-weight: bold;
+    font-size: 2rem;
+    font-weight: bold;
 }
 .product-name a {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #203040;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #203040;
 }
 .product-brand {
-  font-size: 1.2rem;
-  color: #808080;
+    font-size: 1.2rem;
+    color: #808080;
 }
 .product-price {
-  font-size: 1.5rem;
-  font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 .product-image {
-  max-width: 34rem;
-  max-height: 34rem;
+    max-width: 34rem;
+    max-height: 34rem;
 }
 .product-rating {
-  margin-bottom: 1rem;
-  font-size: 1.5em;
+    margin-bottom: 1rem;
+    font-size: 1.5em;
 }
 /* Sidebar */
 
 .brand button {
-  font-size: 3rem;
-  padding: 0.5rem;
-  background: none;
-  border: none;
-  color: #312b2b;
-  cursor: pointer;
+    font-size: 3rem;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    color: #312b2b;
+    cursor: pointer;
 }
 .sidebar {
-  position: fixed;
-  transform: translateX(-30rem);
-  width: 30rem;
-  background-color: #f0f0f0;
-  height: 100%;
+    position: fixed;
+    transform: translateX(-30rem);
+    width: 30rem;
+    background-color: #f0f0f0;
+    height: 100%;
 }
 .sidebar.open {
-  transform: translateX(0);
+    transform: translateX(0);
 }
 
 .sidebar-close-button {
-  border-radius: 50%;
-  border: 0.1rem #000000 solid;
-  width: 3rem;
-  height: 3rem;
-  padding: 0.5rem;
-  font-size: 2rem;
-  padding-top: 0;
-  cursor: pointer;
-  position: absolute;
-  right: 0.5rem;
-  top: 1.5rem;
+    border-radius: 50%;
+    border: 0.1rem #000000 solid;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    padding-top: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 0.5rem;
+    top: 1.5rem;
 }
 
 /* Rating */
 .product-rating span {
-  color: #f0c040;
-  margin: 0.2rem;
+    color: #f0c040;
+    margin: 0.2rem;
 }
 
 .product-rating span:last-child {
-  color: grey;
-  margin: 0.5vw;
+    color: grey;
+    margin: 0.5vw;
 }
 
 /* Alert */
 .success {
-  color: rgb(38, 255, 0);
+    color: rgb(38, 255, 0);
 }
 .error {
-  color: rgb(123, 18, 4);
+    color: rgb(123, 18, 4);
 }
 
 /* 게시판  */
 #board-list {
-  position: relative;
-  width: 100%;
-  /* border: 1px solid yellow; */
-  height: 100vh;
+    position: relative;
+    width: 100%;
+    /* border: 1px solid yellow; */
+    height: 100vh;
 }
 #board-list thead {
-  position: absolute;
-  width: 100%;
+    position: absolute;
+    width: 100%;
 }
 #board-list thead tr {
-  width: 100%;
-  display: flex;
-  /* border: 1px solid #000; */
+    width: 100%;
+    display: flex;
+    /* border: 1px solid #000; */
 }
 
 #board-list tbody {
-  position: absolute;
-  width: 100%;
-  margin-top: 2em;
-  border: 1px solid #000;
-  padding: 1em;
+    position: absolute;
+    width: 100%;
+    margin-top: 2em;
+    border: 1px solid #000;
+    padding: 1em;
 }
 #board-list tbody tr {
-  width: 100%;
-  display: flex;
+    width: 100%;
+    display: flex;
 }
 #board-list .seq {
-  flex: 1;
+    flex: 1;
 }
 #board-list .title {
-  flex: 3;
+    flex: 3;
 }
 #board-list .content {
-  flex: 5;
+    flex: 5;
 }
 #board-list .writtentime {
-  flex: 1;
+    flex: 1;
 }
 #board-list .like {
-  flex: 1;
+    flex: 1;
 }
 #board-list .view {
-  flex: 1;
+    flex: 1;
 }
 
 input.error {
-  border: 1px solid red;
+    border: 1px solid red;
 }
 @media screen and (max-width: 1080px) {
-  .header-left-links {
-    display: none;
-  }
+    .header-left-links {
+        display: none;
+    }
 
-  div.brand button {
-    display: inline-block;
-  }
+    div.brand button {
+        display: inline-block;
+    }
 
-  .header {
-    height: 7em;
-    justify-content: space-between;
-  }
+    .header {
+        height: 7em;
+        justify-content: space-between;
+    }
 }
