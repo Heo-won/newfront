@@ -12,6 +12,25 @@ import IconButton from "@mui/material/IconButton";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import styles from "./topNavigationBar.module.css";
 import LOGO from "../images/drink.png";
+import styledC from "styled-components";
+
+const MyDiv = styledC.div`
+  display: flex;
+  align-items: center;
+  gap:10px;
+`;
+
+const MySpan = styledC.div`
+line-height: 60px;
+vertical-align:center;
+
+`;
+
+const MyImg = styledC.img`
+  width: 50px;
+  margin-bottom:20px;
+
+`;
 
 export default function Header({ cart }) {
   const { logout } = useLogout();
@@ -36,8 +55,12 @@ export default function Header({ cart }) {
       <header className="header">
         <div className="brand">
           <button>&#9776;</button>
-          <img src={LOGO} alt="로고" />
-          <Link to="/">뭐마시지?</Link>
+          <Link to="/">
+            <MyDiv>
+              <MyImg className="logo" src={LOGO} alt="로고" />
+              <MySpan>뭐마시지?</MySpan>
+            </MyDiv>
+          </Link>
         </div>
         <div className="header-left-links">
           {/* html에서 a 태그가 react에선 link라 생각하면된다 */}

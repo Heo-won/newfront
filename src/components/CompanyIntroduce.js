@@ -121,7 +121,7 @@ const DetailBtn = styled.button`
   color: #404040;
   font-weight: bold;
   width: 10vw;
-  margin-top: 22em;
+  margin-top: 25em;
   margin-left: 20.3em;
 `;
 
