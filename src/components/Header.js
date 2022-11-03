@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faUser } from "@fortawesome/free-regular-svg-icons";
 import { useLogout } from "../hooks/useLogout";
 import { useAuthContext } from "../hooks/useAuthContext";
+// import Button from "@mui/icons-material/Button";
 import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
@@ -29,7 +30,6 @@ vertical-align:center;
 const MyImg = styledC.img`
   width: 50px;
   margin-bottom:20px;
-
 `;
 
 export default function Header({ cart }) {

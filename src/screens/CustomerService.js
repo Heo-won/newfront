@@ -18,7 +18,7 @@ export default function CustomerService() {
             <CustomerBenner />
             <CustomerSearch />
             {/* <CustomerIdea /> */}
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 }

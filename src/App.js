@@ -12,6 +12,7 @@ import Slider from "./components/Slider";
 import MainPage from "./screens/MainPage";
 import BoardScreen from "./screens/BoardScreen";
 import Signup from "./screens/Signup";
+// import Login from "./screens/Login";
 import Login from "./screens/Login";
 import Notfound from "./components/Notfound";
 import BoardForm from "./components/BoardForm";
@@ -37,38 +38,31 @@ function App() {
     const [products, setProducts] = useState([]);
     return (
         <>
-            {/* <Compare /> */}
-            {/* <Map></Map> */}
-            {/* <Notfound></Notfound> */}
             <Header cart={cart} />
             <Routes>
                 <Route path="/" element={<MainPage />} exact></Route>
 
                 <Route path="/api/compare/product/:id" element={<ProductScreen />}></Route>
                 <Route path="/api/compare" element={<HomeScreen />} exact></Route>
-
                 <Route path="/api/event" element={<EventScreen products={products} setProducts={setProducts} />}></Route>
                 <Route path="/api/event/product/:id" element={<ProductEvent />} />
-                {/* <Route path="/api/event" element={<Practice />}></Route> */}
-                {/* <Route path="/api/event/add" element={<AddEventScreen />}></Route> */}
 
                 <Route path="/api/board" element={<BoardScreen cart={cart} />}></Route>
                 <Route path="/api/board/:id" element={<BoardContent cart={cart} />}></Route>
                 <Route path="/api/board/create" element={<BoardForm />}></Route>
-
-                {/* <Route path="/api/store" element={<Item />}></Route> */}
                 <Route path="/api/store" element={<Home products={product} setProducts={setProduct} convertPrice={convertPrice} />} />
                 <Route path="/api/store/product/:id" element={<Product convertPrice={convertPrice} cart={cart} setCart={setCart} />} />
-                {/* <Route path="/api/event" element={<EventScreen />}></Route> */}
 
                 <Route path="/api/qna" element={<CustomerService />}></Route>
+                <Route path="/login" element={user ? <Navigate to="/"></Navigate> : <Login />}></Route>
+                <Route path="/signup" element={user ? <Navigate to="/"></Navigate> : <Signup />}></Route>
                 <Route path="*" element={<Notfound />}></Route>
-
                 <Route path="/cart" element={<Basket cart={cart} setCart={setCart} convertPrice={convertPrice} checkLists={checkLists} setCheckLists={setCheckLists} />} />
 
                 <Route path="/login" element={user ? <Navigate to="/"></Navigate> : <Login />}></Route>
                 <Route path="/signup" element={<Signup />}></Route>
             </Routes>
+            <Footer />
         </>
     );
 }

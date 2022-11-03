@@ -22,7 +22,7 @@ function MainPage() {
             <CompanyIntroduce />
             <NewPost />
             <Comunity />
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 }

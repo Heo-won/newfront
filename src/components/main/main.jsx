@@ -49,7 +49,7 @@ export const Main = ({ products, setProducts, convertPrice }) => {
                     return <Product key={`key-${product.id}`} product={product} convertPrice={convertPrice} />;
                 })}
             </main>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 };

@@ -3,7 +3,7 @@ import { useLogin } from "../hooks/useLogin";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { BrowserRouter, BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import styles from "./login.css";
+import Logincss from "./login.css";
 import styled from "styled-components";
 
 const Blank = styled.div`
@@ -40,7 +40,7 @@ export default function Login() {
                     <Link to="/signup">회원가입</Link>
                 </button>
             </form>
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
         </>
     );
 }
