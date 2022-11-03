@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useBoardsContext } from "../hooks/useBoardsContext";
 import styled from "styled-components";
+import styles from "./BoardForm.module.css";
+import CommunityBanner from "./communityBanner";
 
 const Blank = styled.div`
     width: 100%;
@@ -46,16 +48,25 @@ export default function BoardForm() {
     return (
         <>
             <Blank />
+            <CommunityBanner />
             <form className="create" onSubmit={handleSubmit}>
-                <h3>Add a new Board</h3>
-
-                <label>제목</label>
-                <input type="text" onChange={(e) => setTitle(e.target.value)} value={title} className={emptyFields.includes("title") ? "error" : ""} />
-                <label>내용</label>
-                <input type="textarea" onChange={(e) => setContent(e.target.value)} value={content} />
-
-                {/* <label>seq</label>
-                <input type="text" onChange={(e) => setSeq(e.target.value)} value={seq} /> */}
+                <div className="wrap">
+                    <h3>글 작성하기</h3>
+                    <div className={styles.Write}>
+                        <div>
+                            <input
+                                type="text"
+                                onChange={(e) => setTitle(e.target.value)}
+                                value={title}
+                                className={`${styles.title_txt} ${emptyFields.includes("title") ? "error" : ""}`}
+                                placeholder="제목"
+                            />
+                        </div>
+                        <div>
+                            <textarea onChange={(e) => setContent(e.target.value)} value={content} placeholder="내용" className={styles.content_txt} />
+                        </div>
+                    </div>
+                </div>
 
                 <button>글쓰기</button>
                 {error && <div className="error">{error}</div>}
