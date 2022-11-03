@@ -14,7 +14,14 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import styles from "./topNavigationBar.module.css";
 import LOGO from "../images/drink.png";
 import styledC from "styled-components";
-
+const Button = styledC.button`
+    color:red;
+    background-color:white;
+    border-radius: 5px;
+    border:1px solid black;
+    padding:0.5em;
+    margin-left:1em;
+`;
 const MyDiv = styledC.div`
   display: flex;
   align-items: center;
@@ -93,15 +100,7 @@ export default function Header({ cart }) {
           {user && (
             <div>
               <span>{user.email}</span>
-              <button onClick={handleClick}>Log out</button>
-              <FontAwesomeIcon icon={faBell} size="2x" />
-              <a href="cart.html">
-                <IconButton aria-label="cart" sx={{ color: "#312b2b" }}>
-                  <StyledBadge badgeContent={5} color="secondary">
-                    <ShoppingCartIcon sx={{ fontSize: "1em" }} />
-                  </StyledBadge>
-                </IconButton>
-              </a>
+              <Button onClick={handleClick}>Log out</Button>
             </div>
           )}
 
