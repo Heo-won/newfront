@@ -2,12 +2,18 @@ import React, { useState } from "react";
 import { useLogin } from "../hooks/useLogin";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { BrowserRouter, BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import {
+  BrowserRouter,
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Link,
+} from "react-router-dom";
 import Logincss from "./login.css";
 import styled from "styled-components";
 
 import { useEffect } from "react";
-import { googleLogout } from "@react-oauth/google";
+// import { googleLogout } from "@react-oauth/google";
 // import { GoogleOAuthProvider } from "@react-oauth/google";
 
 export default function Login() {
@@ -70,44 +76,4 @@ export default function Login() {
       <Footer></Footer>
     </>
   );
-
-
-const Blank = styled.div`
-    width: 100%;
-    height: 10em;
-`;
-
-export default function Login() {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const { login, error, isLoading } = useLogin();
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        // console.log(email, password);
-
-        await login(email, password);
-    };
-
-    return (
-        <>
-            {/* <Header></Header> */}
-            <Blank />
-            <form className="login" onSubmit={handleSubmit}>
-                <h3>로그인</h3>
-                <label>이메일</label>
-                <input type="text" onChange={(e) => setEmail(e.target.value)} value={email} />
-                <label>비밀번호</label>
-                <input type="password" onChange={(e) => setPassword(e.target.value)} value={password} />
-
-                <button disabled={isLoading}>로그인</button>
-                {error && <div className="error">{error}</div>}
-                <button>
-                    <Link to="/signup">회원가입</Link>
-                </button>
-            </form>
-            {/* <Footer></Footer> */}
-        </>
-    );
-
 }
