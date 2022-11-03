@@ -54,8 +54,8 @@ export default function BoardForm() {
             <form className="create" onSubmit={handleSubmit}>
                 <div className="wrap">
                     <div className={`${styles.Write} ${() => navi("/api/board")}`}>
-                        <h3>글 작성하기</h3>
                         <div>
+                            <h3>글 작성하기</h3>
                             <input
                                 type="text"
                                 onChange={(e) => setTitle(e.target.value)}
