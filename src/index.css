@@ -385,17 +385,17 @@ input.error {
   .header-left-links {
     display: none;
   }
-
+  /* 
   div.brand button {
     display: inline-block;
-  }
+  } */
 
   .header {
     height: 7em;
     justify-content: space-between;
   }
 
-  .header .logo {
+  .header .brand .logotitle {
     display: none;
   }
 }

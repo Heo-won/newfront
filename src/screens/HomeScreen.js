@@ -28,6 +28,7 @@ export default function HomeScreen() {
       }
     }
     fetchData();
+    window.scrollTo(0, 0);
   }, []);
 
   if (okay) {

@@ -36,7 +36,7 @@ vertical-align:center;
 
 const MyImg = styledC.img`
   width: 50px;
-  margin-bottom:20px;
+  margin-bottom:10px;
 `;
 
 export default function Header({ cart }) {
@@ -61,11 +61,10 @@ export default function Header({ cart }) {
     <div className="out">
       <header className="header">
         <div className="brand">
-          <button>&#9776;</button>
           <Link to="/">
             <MyDiv>
               <MyImg className="logo" src={LOGO} alt="로고" />
-              <MySpan>뭐마시지?</MySpan>
+              <MySpan className="logotitle">뭐마시지?</MySpan>
             </MyDiv>
           </Link>
         </div>

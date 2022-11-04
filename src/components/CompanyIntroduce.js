@@ -46,6 +46,7 @@
 import React from "react";
 import styled from "styled-components";
 import IntroImg from "../images/pngegg.png";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   /* flex-direction: column; */
@@ -164,7 +165,9 @@ export default function CompanyIntroduce() {
               <br />
               가나다라마바사아자차카타파하하하하하하하
             </TitleThree>
-            <DetailBtn>자세히 보기</DetailBtn>
+            <Link to="/api/compare">
+              <DetailBtn>자세히 보기</DetailBtn>
+            </Link>
           </LeftDiv>
           <RightDiv>
             <Img src={IntroImg}></Img>

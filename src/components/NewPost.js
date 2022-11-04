@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import NewPostImg from "../images/wonddo.png";
 import CoffeeImg from "../images/starbucks.png";
 import CoffeeBean from "../images/coffeebean.jpg";
@@ -97,7 +98,9 @@ export default function NewPost() {
             <TitleOne>꽁뜨 뒤 쥬흐</TitleOne>
             <TitleTwo>Conte Du Jour CAFFE</TitleTwo>
             <TitleThree>오늘의 이야기, 일상의 커피를 즐겨보세요</TitleThree>
-            <DetailBtn>자세히 보기</DetailBtn>
+            <Link to="/api/store/product/14">
+              <DetailBtn>자세히 보기</DetailBtn>
+            </Link>
           </LeftDiv>
           <RightDiv>{<Img src={CoffeeImg}></Img>}</RightDiv>
         </ContainerInner>
