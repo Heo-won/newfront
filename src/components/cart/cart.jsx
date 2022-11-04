@@ -108,7 +108,6 @@ export const Cart = ({
           convertPrice={convertPrice}
         />
       )}
-      <Footer />
     </>
   );
 };
