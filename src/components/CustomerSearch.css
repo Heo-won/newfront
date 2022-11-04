@@ -1,0 +1,7 @@
+.question:hover {
+  display: block;
+}
+
+.answer {
+  display: none;
+}

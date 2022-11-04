@@ -9,7 +9,7 @@ import {
   Link,
 } from "react-router-dom";
 import { useSignup } from "../hooks/useSignup";
-import Signupcss from "./signUp.css";
+import Signupcss from "./signup.css";
 import styled from "styled-components";
 
 const Blank = styled.div`
