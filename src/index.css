@@ -241,7 +241,6 @@ ul {
 }
 .footer .first {
   padding-top: 3em;
-  margin-top: 3vh;
 }
 .footer p {
   /* margin-top: 2em; */
@@ -273,6 +272,7 @@ a:hover {
   flex: 0 1 34rem;
   margin: 1rem;
   height: 50rem;
+  border-bottom: 0.1rem #c0c0c0 solid;
 }
 .product {
   display: flex;
@@ -291,7 +291,7 @@ a:hover {
   color: #203040;
 }
 .product-brand {
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: #808080;
 }
 .product-price {
@@ -303,11 +303,13 @@ a:hover {
   max-height: 34rem;
 }
 .product-rating {
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   font-size: 1.5em;
 }
 /* Sidebar */
-
+/* .sidenav {
+  background-color: rgba(255, 255, 255, 0.427);
+} */
 .brand button {
   font-size: 3rem;
   padding: 0.5rem;
@@ -414,10 +416,10 @@ input.error {
   .header-left-links {
     display: none;
   }
-  /* 
+
   div.brand button {
     display: inline-block;
-  } */
+  }
 
   .header {
     height: 7em;
