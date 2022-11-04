@@ -69,16 +69,16 @@ const ContainerInner = styled.div`
 const LeftDiv = styled.div`
   position: relative;
   /* border: 1px solid red; */
-  width: 50%;
+  width: 100%;
 `;
 
 const Title = styled.div``;
 
 const TitleOne = styled.div`
   position: absolute;
-  font-size: 5em;
-  margin-top: 1em;
-  margin-left: 2.8em;
+  font-size: 6em;
+  margin-top: 2em;
+  margin-left: 11em;
 
   font-weight: bold;
   /* transform: translate(-700px);
@@ -87,9 +87,9 @@ const TitleOne = styled.div`
 
 const TitleTwo = styled.div`
   position: absolute;
-  font-size: 4em;
-  margin-top: 3em;
-  margin-left: 3.5em;
+  font-size: 5em;
+  margin-top: 4.6em;
+  margin-left: 13em;
   /* transform: translate(-700px); */
 `;
 
@@ -107,7 +107,7 @@ const TitleThree = styled.div`
   position: absolute;
   font-size: 2em;
   margin-top: 11em;
-  margin-left: 7em;
+  margin-left: 20em;
 
   /* right: -120px; */
 `;
@@ -123,8 +123,8 @@ const DetailBtn = styled.button`
   color: #404040;
   font-weight: bold;
   width: 10vw;
-  margin-top: 25em;
-  margin-left: 20.3em;
+  margin-top: 30em;
+  margin-left: 55em;
   padding: 0.5vw;
   border-radius: 1em;
   // hover
@@ -159,17 +159,16 @@ export default function CompanyIntroduce() {
               다양한 메뉴를 한번에 <br />
               비교해보세요.
             </TitleTwo>
-            <TitleThree>
+            {/* <TitleThree>
               <br />
               가나다라마바사아자차카타파하하하하하하하
               <br />
               가나다라마바사아자차카타파하하하하하하하
-            </TitleThree>
+            </TitleThree> */}
             <Link to="/api/compare">
               <DetailBtn>자세히 보기</DetailBtn>
             </Link>
           </LeftDiv>
-          <RightDiv>{/* <Img src={IntroImg}></Img> */}</RightDiv>
         </ContainerInner>
       </Container>
     </>

@@ -83,7 +83,7 @@ const Img2 = styled.img`
 const Btn = styled.button`
   position: absolute;
   left: 60%;
-  top: 25em;
+  top: 28em;
   opacity: 1;
   padding: 0.5vw;
   border-radius: 1em;
