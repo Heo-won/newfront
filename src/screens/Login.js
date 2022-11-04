@@ -53,7 +53,7 @@ export default function Login() {
           <button disabled={isLoading}>
             <p>Log in</p>
           </button>
-          {error && <div className="error">{error}</div>}
+
           <button>
             <Link to="/signup">
               <p>회원가입</p>
@@ -78,6 +78,7 @@ export default function Login() {
               </GoogleOAuthProvider>
             </div> */}
           </div>
+          {error && <div className="error">{error}</div>}
         </form>
         {/* 구글 로그인 양식 */}
       </div>
