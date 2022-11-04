@@ -29,6 +29,13 @@ const LeftDiv = styled.div`
   position: relative;
   width: 50%;
   height: 20vh;
+  /* transform: translate(-100px, 0px);
+  opacity: 0;
+  transition: 2.5s;
+  &:hover {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  } */
 `;
 
 const Title = styled.div``;
