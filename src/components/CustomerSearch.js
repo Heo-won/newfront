@@ -130,9 +130,7 @@ export default function CustomerSearch() {
                   <StackDiv>
                     <StackDivInner>
                       <Avatar sx={{ marginLeft: "3em" }}>Q</Avatar>
-                      <Question className="question">
-                        [사용] 홈페이지 주소는 무엇인가요?
-                      </Question>
+                      <Question>[사용] 홈페이지 주소는 무엇인가요?</Question>
                     </StackDivInner>
                     <StackDivInner>
                       <Avatar
@@ -144,7 +142,7 @@ export default function CustomerSearch() {
                       >
                         A
                       </Avatar>
-                      <Answer className="answer">
+                      <Answer>
                         PC 접속 시 : https://www.hollys.co.kr <br />
                         모바일 접속 시 : https://m.hollys.co.kr
                       </Answer>

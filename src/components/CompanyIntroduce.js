@@ -169,9 +169,7 @@ export default function CompanyIntroduce() {
               <DetailBtn>자세히 보기</DetailBtn>
             </Link>
           </LeftDiv>
-          <RightDiv>
-            <Img src={IntroImg}></Img>
-          </RightDiv>
+          <RightDiv>{/* <Img src={IntroImg}></Img> */}</RightDiv>
         </ContainerInner>
       </Container>
     </>

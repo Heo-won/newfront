@@ -10,21 +10,22 @@ import NewPost from "../components/NewPost";
 import Slider from "../components/Slider";
 
 const Blank = styled.div`
-    width: 100%;
-    height: 10em;
+  width: 100%;
+  height: 10em;
 `;
 
 function MainPage() {
-    return (
-        <>
-            <Blank />
-            <CarouselMain />
-            <CompanyIntroduce />
-            <NewPost />
-            <Comunity />
-            {/* <Footer /> */}
-        </>
-    );
+  return (
+    <>
+      <Blank />
+      <CarouselMain />
+      <br></br>
+      <CompanyIntroduce />
+      <NewPost />
+      <Comunity />
+      {/* <Footer /> */}
+    </>
+  );
 }
 
 export default MainPage;
