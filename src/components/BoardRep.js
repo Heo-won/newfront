@@ -8,44 +8,44 @@ import { Link } from "react-router-dom";
 import styles from "./BoardTitle.css";
 
 export default function BoardRep({ board }) {
-    const { dispatch } = useBoardsContext();
-    const handleClick = async () => {
-        const response = await fetch("/api/boards/" + board._id, {
-            method: "DELETE",
-        });
-        const json = await response.json();
+  const { dispatch } = useBoardsContext();
+  const handleClick = async () => {
+    const response = await fetch("/api/boards/" + board._id, {
+      method: "DELETE",
+    });
+    const json = await response.json();
 
-        if (response.ok) {
-            dispatch({ type: "DELETE_BOARD", payload: json });
-        }
-    };
+    if (response.ok) {
+      dispatch({ type: "DELETE_BOARD", payload: json });
+    }
+  };
 
-    const change_date = (published_at) => {
-        var moment = require("moment");
+  const change_date = (published_at) => {
+    var moment = require("moment");
 
-        const publish_date = moment(published_at).format("YYYY-MM-DD");
-        return publish_date;
-    };
+    const publish_date = moment(published_at).format("YYYY-MM-DD");
+    return publish_date;
+  };
 
-    return (
-        <>
-            <tr className="bodytr">
-                <td className="seq" key={board.seq}>
-                    {board.seq}
-                </td>
-                <td className="left">
-                    <div className="title">
-                        <Link to={`${board.seq}`}>{board.title}</Link>
-                    </div>
-                </td>
-                {/* <td className="content">{board.content}</td> */}
-                <td className="writtentime">{change_date(board.writtenTime)}</td>
-                <td className="like">{board.like}</td>
-                <td className="view">{board.view}</td>
-                {/* <td>
+  return (
+    <>
+      <tr className="bodytr">
+        <td className="seq" key={board.seq}>
+          {board.seq}
+        </td>
+        <td className="left">
+          <div className="title">
+            <Link to={`${board.seq}`}>{board.title}</Link>
+          </div>
+        </td>
+        {/* <td className="content">{board.content}</td> */}
+        <td className="writtentime">{change_date(board.writtenTime)}</td>
+        <td className="like">{board.like}</td>
+        <td className="view">{board.view}</td>
+        {/* <td>
                     <i onClick={handleClick} className="fa-solid fa-trash"></i>
                 </td> */}
-            </tr>
-        </>
-    );
+      </tr>
+    </>
+  );
 }
