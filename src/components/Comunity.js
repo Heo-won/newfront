@@ -108,9 +108,10 @@ export default function Comunity() {
           {/* <a href="#" class="btn btn--gold">
             자세히 보기
           </a> */}
-          <Link to="/api/board">
-            <Btn>소통하러 가기</Btn>
-          </Link>
+
+          <Btn>
+            <Link to="/api/board">소통하러 가기</Link>
+          </Btn>
         </ContainerInner>
       </Container>
     </>

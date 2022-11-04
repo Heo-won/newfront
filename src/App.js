@@ -110,13 +110,17 @@ function App() {
         <Route
           path="/cart"
           element={
-            <Basket
-              cart={cart}
-              setCart={setCart}
-              convertPrice={convertPrice}
-              checkLists={checkLists}
-              setCheckLists={setCheckLists}
-            />
+            user ? (
+              <Basket
+                cart={cart}
+                setCart={setCart}
+                convertPrice={convertPrice}
+                checkLists={checkLists}
+                setCheckLists={setCheckLists}
+              />
+            ) : (
+              <Navigate to="/login"></Navigate>
+            )
           }
         />
       </Routes>
