@@ -424,8 +424,12 @@ input.error {
     justify-content: space-between;
   }
 
-  .header .brand .logotitle {
+  .header .brand .logo{
     display: none;
+  }
+
+  .brand button {
+    display: inline-block;
   }
 
   .brand ul {
