@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import BoardScreen from "../screens/BoardScreen";
 import Compare from "../screens/CompareScrenn";
@@ -14,6 +14,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import styles from "./topNavigationBar.module.css";
 import LOGO from "../images/drink.png";
 import styledC from "styled-components";
+
 const Button = styledC.button`
     color:red;
     background-color:white;
@@ -28,12 +29,6 @@ const MyDiv = styledC.div`
   gap:10px;
 `;
 
-const MySpan = styledC.div`
-line-height: 60px;
-vertical-align:center;
-
-`;
-
 const MyImg = styledC.img`
   width: 50px;
   margin-bottom:10px;
@@ -42,6 +37,8 @@ const MyImg = styledC.img`
 export default function Header({ cart }) {
   const { logout } = useLogout();
   const { user } = useAuthContext();
+
+  const [show, setShow] = useState(false);
 
   console.log("CART", cart);
 
@@ -61,10 +58,30 @@ export default function Header({ cart }) {
     <div className="out">
       <header className="header">
         <div className="brand">
+          <button onClick={() => setShow(!show)}>&#9776;</button>
+          {show && (
+            <ul class="sidenav">
+              <li>
+                <Link to="/api/compare">메뉴</Link>
+              </li>
+              <li>
+                <Link to="/api/event">이벤트</Link>
+              </li>
+              <li>
+                <Link to="/api/board">커뮤니티</Link>
+              </li>
+              <li>
+                <Link to="/api/store">스토어</Link>
+              </li>
+              <li>
+                <Link to="/api/qna">고객 센터</Link>
+              </li>
+            </ul>
+          )}
           <Link to="/">
             <MyDiv>
               <MyImg className="logo" src={LOGO} alt="로고" />
-              <MySpan className="logotitle">뭐마시지?</MySpan>
+              <span>뭐마시지?</span>
             </MyDiv>
           </Link>
         </div>

@@ -51,6 +51,35 @@ body {
   height: 100%;
 }
 
+.brand {
+  width: 200px;
+  display: flex;
+  gap: 20px;
+}
+
+.brand span {
+  font-size: 1em; 
+}
+
+.brand ul {
+  position: absolute;
+  left: 0;
+  top: 70px;
+  width: 300px;
+  height: 450px;
+  background-color: #eee;
+  padding: 1em 2em;
+  box-sizing: border-box;
+  margin: 0;    
+  border-radius: 10px;   
+  border: 1px solid #999;
+  display: none;
+}
+
+.brand ul li {
+  margin: 2em 1em;
+}
+
 .brand button {
   padding: 1rem;
   border-radius: 0.5rem;
@@ -397,5 +426,9 @@ input.error {
 
   .header .brand .logotitle {
     display: none;
+  }
+
+  .brand ul {
+    display: block;
   }
 }
